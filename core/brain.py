@@ -1,18 +1,24 @@
+from config.settings import SYSTEM_PROMPT_PATH
+from core.prompt_loader import PromptLoader
+from core.context_builder import ContextBuilder
+
+
 class Brain:
-    def __init__(self, llm_client):
+    """
+    Coordinates the assistant's reasoning.
+    """
+
+    def __init__(self, llm_client, conversation_manager):
         self.llm = llm_client
 
+        self.system_prompt = PromptLoader.load(SYSTEM_PROMPT_PATH)
+
+        self.context_builder = ContextBuilder(
+            self.system_prompt,
+            conversation_manager,
+        )
+
     def think(self, user_message):
-        """
-        Processes the user's message and returns a response.
+        messages = self.context_builder.build(user_message)
 
-        In future versions this method will:
-        - Read long-term memory
-        - Retrieve recent conversations
-        - Search the Obsidian vault
-        - Call tools
-        - Build the final prompt
-
-        For now, it simply forwards the message to the LLM.
-        """
-        return self.llm.chat(user_message)
+        return self.llm.stream_chat(messages)
