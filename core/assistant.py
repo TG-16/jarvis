@@ -1,16 +1,17 @@
 class Assistant:
     """
     Handles the interaction between the user and Jarvis.
-
-    Responsibilities:
-    - Read user input
-    - Display streamed responses
-    - Save conversation history
     """
 
-    def __init__(self, brain, conversation_manager):
+    def __init__(
+        self,
+        brain,
+        conversation_manager,
+        memory_manager,
+    ):
         self.brain = brain
         self.conversation_manager = conversation_manager
+        self.memory_manager = memory_manager
 
     def start(self):
         print("=================================")
@@ -28,15 +29,12 @@ class Assistant:
                 print("\nJarvis: Goodbye!\n")
                 break
 
-            # Save the user's message
             self.conversation_manager.add_user_message(user_input)
 
-            # Ask the Brain for a streamed response
             response_stream = self.brain.think(user_input)
 
             print("\nJarvis: ", end="", flush=True)
 
-            # Collect the streamed response while printing it
             response_chunks = []
 
             for chunk in response_stream:
@@ -45,8 +43,9 @@ class Assistant:
 
             print("\n")
 
-            # Combine all chunks into one complete response
             full_response = "".join(response_chunks)
 
-            # Save the assistant's response
             self.conversation_manager.add_assistant_message(full_response)
+
+            # Process long-term memory after responding
+            self.memory_manager.process(user_input)

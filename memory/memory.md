@@ -14,6 +14,9 @@ Location: Bahir Dar
 
 Preferred Programming Language:
 
+1. JavaScript
+2. (any other preferred languages)
+
 Preferred IDE: VS code
 
 Operating System: Windows
@@ -31,3 +34,5 @@ Current Project: Jarvis
 Career Goal: Remote backend developer
 
 Currently Learning: cyber security
+
+----------------------------------------

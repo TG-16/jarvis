@@ -8,6 +8,7 @@ from llm.ollama_client import OllamaClient
 
 from memory.conversation_manager import ConversationManager
 from memory.memory_store import MemoryStore
+from memory.memory_manager import MemoryManager
 
 from core.brain import Brain
 from core.assistant import Assistant
@@ -16,12 +17,13 @@ from core.assistant import Assistant
 def main():
     llm_client = OllamaClient(MODEL_NAME)
 
-    conversation_manager = ConversationManager(
-        CONVERSATION_FILE
-    )
+    conversation_manager = ConversationManager(CONVERSATION_FILE)
 
-    memory_store = MemoryStore(
-        MEMORY_FILE
+    memory_store = MemoryStore(MEMORY_FILE)
+
+    memory_manager = MemoryManager(
+        llm_client,
+        memory_store,
     )
 
     brain = Brain(
@@ -33,6 +35,7 @@ def main():
     assistant = Assistant(
         brain,
         conversation_manager,
+        memory_manager,
     )
 
     assistant.start()

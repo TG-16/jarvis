@@ -1,70 +1,6 @@
 [
     {
         "role": "user",
-        "content": "what is my name"
-    },
-    {
-        "role": "assistant",
-        "content": "Your name is Teddy."
-    },
-    {
-        "role": "user",
-        "content": "hello"
-    },
-    {
-        "role": "assistant",
-        "content": "Hi there! How can I help you today?"
-    },
-    {
-        "role": "user",
-        "content": "do you remember my name"
-    },
-    {
-        "role": "assistant",
-        "content": "Yes, your name is Teddy. How can I assist you further?"
-    },
-    {
-        "role": "user",
-        "content": "very good, i am a 5th year software engineering student"
-    },
-    {
-        "role": "assistant",
-        "content": "That's great! Do you have any specific questions or topics you'd like to discuss related to your studies?"
-    },
-    {
-        "role": "user",
-        "content": "i mostly focus on backend development, my usual tech stack is Node js with express and mysql or postgress db"
-    },
-    {
-        "role": "assistant",
-        "content": "Great to hear that! If you have any questions about backend development, Node.js, Express, MySQL, PostgreSQL, or anything else related to your studies, feel free to ask. I'm here to help!"
-    },
-    {
-        "role": "user",
-        "content": "what year am i?"
-    },
-    {
-        "role": "assistant",
-        "content": "You are a 5th-year software engineering student."
-    },
-    {
-        "role": "user",
-        "content": "hello"
-    },
-    {
-        "role": "assistant",
-        "content": "Hello! How can I assist you today?"
-    },
-    {
-        "role": "user",
-        "content": "what IDE do i use?"
-    },
-    {
-        "role": "assistant",
-        "content": "You stated that your preferred IDE is VS Code."
-    },
-    {
-        "role": "user",
         "content": "what project am i building"
     },
     {
@@ -78,5 +14,69 @@
     {
         "role": "assistant",
         "content": "That sounds like an interesting challenge! How are you planning to implement this feature in Jarvis? Do you have any specific questions or issues related to the implementation that I can assist with?"
+    },
+    {
+        "role": "user",
+        "content": "hello"
+    },
+    {
+        "role": "assistant",
+        "content": "Hello! How can I help you today?"
+    },
+    {
+        "role": "user",
+        "content": "when ever you great me call my name"
+    },
+    {
+        "role": "assistant",
+        "content": "Understood. I'll make sure to greet you by calling your name whenever appropriate. How can I assist you further?"
+    },
+    {
+        "role": "user",
+        "content": "hello"
+    },
+    {
+        "role": "assistant",
+        "content": "Hello! How can I assist you today?"
+    },
+    {
+        "role": "user",
+        "content": "hello"
+    },
+    {
+        "role": "assistant",
+        "content": "Hello Teddy! How can I assist you today?"
+    },
+    {
+        "role": "user",
+        "content": "i like js (javascript)"
+    },
+    {
+        "role": "assistant",
+        "content": "That's great to hear! JavaScript is a powerful language that's essential for web development. If you have any specific questions or need help with your JavaScript projects, feel free to ask!"
+    },
+    {
+        "role": "user",
+        "content": "hello"
+    },
+    {
+        "role": "assistant",
+        "content": "Hello Teddy! How can I assist you today?"
+    },
+    {
+        "role": "user",
+        "content": "i like js ( java script )"
+    },
+    {
+        "role": "assistant",
+        "content": "JavaScript is a popular programming language used for web development. If you have any questions or need help with JavaScript, feel free to ask! Whether it's front-end or back-end development, I'm here to assist you. What specific issues do you need help with?"
+    },
+    {
+        "role": "user",
+        "content": "what is my favorite programing language"
+    },
+    {
+        "role": "assistant",
+        "content": "Based on your preferences, your favorite programming language is JavaScript."
     }
 ]
