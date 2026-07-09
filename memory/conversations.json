@@ -1,18 +1,82 @@
 [
     {
         "role": "user",
-        "content": "hello my name is Teddy"
-    },
-    {
-        "role": "assistant",
-        "content": "Hello Teddy! How can I assist you today?"
-    },
-    {
-        "role": "user",
         "content": "what is my name"
     },
     {
         "role": "assistant",
         "content": "Your name is Teddy."
+    },
+    {
+        "role": "user",
+        "content": "hello"
+    },
+    {
+        "role": "assistant",
+        "content": "Hi there! How can I help you today?"
+    },
+    {
+        "role": "user",
+        "content": "do you remember my name"
+    },
+    {
+        "role": "assistant",
+        "content": "Yes, your name is Teddy. How can I assist you further?"
+    },
+    {
+        "role": "user",
+        "content": "very good, i am a 5th year software engineering student"
+    },
+    {
+        "role": "assistant",
+        "content": "That's great! Do you have any specific questions or topics you'd like to discuss related to your studies?"
+    },
+    {
+        "role": "user",
+        "content": "i mostly focus on backend development, my usual tech stack is Node js with express and mysql or postgress db"
+    },
+    {
+        "role": "assistant",
+        "content": "Great to hear that! If you have any questions about backend development, Node.js, Express, MySQL, PostgreSQL, or anything else related to your studies, feel free to ask. I'm here to help!"
+    },
+    {
+        "role": "user",
+        "content": "what year am i?"
+    },
+    {
+        "role": "assistant",
+        "content": "You are a 5th-year software engineering student."
+    },
+    {
+        "role": "user",
+        "content": "hello"
+    },
+    {
+        "role": "assistant",
+        "content": "Hello! How can I assist you today?"
+    },
+    {
+        "role": "user",
+        "content": "what IDE do i use?"
+    },
+    {
+        "role": "assistant",
+        "content": "You stated that your preferred IDE is VS Code."
+    },
+    {
+        "role": "user",
+        "content": "what project am i building"
+    },
+    {
+        "role": "assistant",
+        "content": "It seems like you're working on a project called \"Jarvis.\" What specific aspects of the Jarvis project are you focusing on right now?"
+    },
+    {
+        "role": "user",
+        "content": "i am currently working on making jarvis remember things for long term"
+    },
+    {
+        "role": "assistant",
+        "content": "That sounds like an interesting challenge! How are you planning to implement this feature in Jarvis? Do you have any specific questions or issues related to the implementation that I can assist with?"
     }
 ]
